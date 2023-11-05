@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import MobileSidebar from '@/components/MobileSidebar';
 
 const inter = Montserrat({
     weight: '400',
@@ -23,6 +24,9 @@ export const metadata = {
             <body className={inter.className} >
                 <div style={{ display: 'flex' }}>
                     <Sidebar />
+                    <div className='lg:block md:hidden sm:hidden hidden'>
+                         <MobileSidebar />
+                    </div>
                     {/* <Sidenav /> */}
                     <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
                         <Navbar />

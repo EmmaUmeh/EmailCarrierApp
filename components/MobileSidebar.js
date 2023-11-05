@@ -7,7 +7,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { TbSend } from "react-icons/tb";
 import { FiTrash2 } from "react-icons/fi"
 
-export default function Sidebar() {
+export default function MobileSidebar() {
 
         const [toggleModal, setToggleModal] = useState(false);
 
@@ -17,7 +17,7 @@ export default function Sidebar() {
 
     return (
       <>
-        <div className="fixed w-60 h-screen bg-white z-50 border-r-2 border-[#E0E0E0] py-4 px-3 lg:block md:hidden sm:hidden hidden block">
+        <div className="fixed w-60 left-0 h-screen bg-white z-50 border-r-2 border-[#E0E0E0] py-4 px-3 lg:hidden sm:block md:block hidden">
           <div className="py-5 px-3">
             <button className="w-full rounded-lg bg-[#0085ff] text-white text-sm py-2 px-2" onClick={handleToggleModal}>Compose</button>
           </div>
